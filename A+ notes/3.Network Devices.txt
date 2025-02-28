@@ -1,0 +1,112 @@
+I'll help you create study notes from this networking equipment document. Here's a structured breakdown of the key concepts to study for your test:
+
+# Network Infrastructure Devices Study Notes
+
+## Routers
+- Forwards traffic between different IP subnets
+- Uses IP addresses to determine next hop to final destination
+- Operates at Layer 3 of OSI model
+- Can connect different network types (LAN, WAN, copper, fiber)
+- Can be integrated into switches (Layer 3 switches)
+
+## Switches
+- Connects devices on a local network
+- Forwards traffic based on destination MAC address
+- Uses ASICs (Application Specific Integrated Circuits) for fast throughput
+- Many support Power over Ethernet (PoE)
+
+### Types of Switches:
+1. **Unmanaged Switches**
+   - Limited functionality
+   - No configuration options
+   - No VLAN support
+   - No SNMP capabilities
+   - Lower cost option
+   - All devices on same network segment
+
+2. **Managed Switches**
+   - Additional capabilities for monitoring and configuration
+   - Supports VLAN configuration
+   - Traffic prioritization options
+   - Supports Spanning Tree Protocol (STP) for loop prevention
+   - Port mirroring for troubleshooting
+   - SNMP support
+
+## Wireless Access Points
+- Provides wireless connectivity to local networks
+- Acts as a bridge between wireless and wired networks
+- Not a router (doesn't route between subnets)
+- Makes forwarding decisions based on MAC addresses (like switches)
+- Does not perform NAT
+
+## Patch Panels
+- Connection point between user workstations and network equipment
+- Permanent cable runs from workstations to patch panel
+- Allows for easier network changes without modifying permanent wiring
+- Typically uses RJ45 connectors on front side
+- Reduces scope of problems during changes
+
+## Firewalls
+- Traditional firewalls operate at Layer 4 (port numbers, IP addresses)
+- Modern firewalls can operate at Layer 7 (application layer)
+- Can act as VPN endpoints for encrypted tunnels
+- May function as proxies
+- Often include routing capabilities (Layer 3)
+- Commonly connected directly to internet
+
+## Power over Ethernet (PoE)
+- Provides power through ethernet cables
+- Useful for devices where power sources are difficult to access
+- Types:
+  - **Endspan**: Power comes from switch
+  - **Midspan**: Power injected by separate PoE injector
+
+### PoE Standards:
+1. **IEEE 802.3af (2003)**
+   - 15.4 watts, 350mA max
+   - Original PoE specification
+
+2. **IEEE 802.3at (2009)**
+   - 25.5 watts, 600mA max
+   - Enhanced PoE
+
+3. **IEEE 802.3bt (PoE++)**
+   - Type 3: 51 watts, 600mA max
+   - Type 4: 71.3 watts, 960mA max
+   - Designed for 10Gbps ethernet
+
+## Hubs (Outdated)
+- Multi-port repeaters
+- Copy data from one port to all other ports
+- Half-duplex only
+- Performance degrades with more devices
+- Limited to 10/100 Mbps speeds
+- Replaced by switches in modern networks
+
+## Internet Connection Devices
+1. **Cable Modems**
+   - Uses DOCSIS (Data Over Cable Service Interface Specification)
+   - Supports broadband communication (multiple frequencies)
+   - Can provide internet, TV, and phone service
+   - Speeds up to 1 Gbps depending on provider
+
+2. **DSL Modems**
+   - Often ADSL (Asymmetric Digital Subscriber Line)
+   - Uses telephone lines
+   - Faster download than upload speeds
+   - Distance limitation (~10,000 feet from Central Office)
+   - Typical speeds: 52 Mbps down, 16 Mbps up
+
+3. **Optical Network Terminal (ONT)**
+   - Connects fiber networks to premises
+   - Converts fiber signals to copper ethernet
+   - Usually mounted outside building
+   - Marks demarcation point (demarc) between ISP and customer networks
+
+## Network Interface Cards (NICs)
+- Required for any device connecting to a network
+- Can be built into motherboard or added as expansion cards
+- Available for different network types (ethernet, wireless, fiber, etc.)
+- Some NICs have multiple ports/connectors
+
+Would you like me to expand on any particular section or create practice questions to help you study?

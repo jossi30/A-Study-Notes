@@ -1,0 +1,64 @@
+The Moving Truck Metaphor
+The network is like a road.
+The moving truck represents Internet Protocol (IP), which transports data.
+Inside the truck is a box, which represents data being sent.
+The truck doesn’t care what’s in the box; it just moves it from one place to another.
+Once the box arrives, it’s unpacked, and the data inside is used.
+Breaking Down the Data Transfer Process
+Your device (computer, phone, etc.) communicates with a server (website, email service, etc.) by sending data in layers:
+
+Ethernet frame → The truck on the road.
+IP packet → The truck carrying the box.
+TCP/UDP segment → The box inside the truck.
+Application data → The content inside the box.
+TCP vs. UDP (Two Ways to Send Data)
+TCP (Transmission Control Protocol)
+✔ Like certified mail – ensures delivery with tracking.
+✔ Establishes a connection before sending data.
+✔ Guarantees that data arrives in order and re-sends lost data.
+✔ Used for:
+
+Web browsing (HTTP, HTTPS).
+Emails (SMTP, IMAP, POP3).
+Secure connections (SSH, FTPS).
+UDP (User Datagram Protocol)
+✔ Like dropping a postcard in a mailbox – no confirmation if received.
+✔ No connection setup – just sends data quickly.
+✔ No re-sending of lost data.
+✔ Used for:
+
+Live video streaming (YouTube, Netflix).
+Voice calls (VoIP) (Zoom, Skype).
+Online gaming (low latency needed).
+Port Numbers: How Data Gets Delivered Correctly
+✔ Every computer/server has an IP address (like a house address).
+✔ Inside that computer, different applications/services have port numbers (like rooms in a house).
+✔ Common port numbers:
+
+Port 80 (HTTP) → Web browsing.
+Port 443 (HTTPS) → Secure web browsing.
+Port 25 (SMTP) → Sending emails.
+Port 123 (NTP) → Time synchronization.
+How a Client Communicates with a Server
+1️⃣ The client (your device) picks a random port number to start communication.
+2️⃣ It sends data to a well-known port number on the server.
+
+Example:
+Your computer wants to visit a website.
+It picks port 3000 (random) and sends a request to the server’s port 80 (HTTP).
+The server replies back to port 3000, completing the communication.
+Multiplexing (Handling Multiple Conversations at Once)
+✔ Your device talks to many services at once using different port numbers:
+
+Web browsing on port 80.
+Email on port 143.
+Voice call on port 5004.
+✔ Each connection has a unique combination of:
+
+IP addresses.
+Port numbers.
+✔ This keeps conversations separate.
+Why Port Numbers Matter
+✔ They ensure data reaches the right application.
+✔ Well-known port numbers simplify communication.
+✔ Changing port numbers doesn’t add security – hackers can still scan for open ports.

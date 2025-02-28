@@ -1,0 +1,62 @@
+I'll create study notes for Software Defined Networking (SDN) based on this document:
+
+# Software Defined Networking (SDN) Study Notes
+
+## Overview
+- Cloud computing changed traditional networking
+- Physical routers, switches, etc. replaced by virtualized components
+- SDN converts physical network infrastructure into software-based platforms
+- Separates device functions into individual software components
+
+## SDN Architecture Layers
+
+### 1. Infrastructure Layer (Data Plane)
+- Handles packet-level operations
+- Responsible for:
+  - Forwarding packets
+  - Trunking
+  - Encryption
+  - Network Address Translation (NAT)
+  - Other packet-level functions
+- Carries the actual network traffic
+
+### 2. Control Layer (Control Plane)
+- Provides intelligence and reference information for the data plane
+- Contains:
+  - Dynamic routing protocols
+  - Forwarding tables (for switches)
+  - NAT tables (for routers)
+  - Other decision-making logic
+- Tells the data plane where to send traffic
+
+### 3. Application Layer (Management Plane)
+- Interface for managing network devices
+- Accessed through:
+  - SSH (Secure Shell)
+  - SNMP (Simple Network Management Protocol)
+  - APIs (Application Programming Interfaces)
+  - Graphical interfaces
+- Allows administrators to configure and monitor devices
+
+## Benefits of SDN Architecture
+- Creates modular layers that can extend between different devices
+- Enables creation of new network devices through software
+- Allows communication between specific layers across different devices
+- Provides consistent architecture across different networking components
+- Supports deployment in cloud environments
+- Creates software versions of physical network infrastructure
+
+## Physical vs. Software Implementation
+- Traditional physical switch/router: all planes integrated in one device
+- SDN: separates functions into distinct software components
+- Data plane handles traffic forwarding across interfaces
+- Control plane contains tables and forwarding information
+- Management plane provides the administrative interface
+- No physical hardware required in pure SDN implementations
+
+## Practical Applications
+- Cloud-based networking infrastructure
+- Virtualized network environments
+- Software-based deployment of traditional network functions
+
+Would you like me to expand on any specific area of Software Defined Networking or create practice questions to help you study this material?

@@ -1,0 +1,93 @@
+**Understanding Ports and Protocols in Networking**
+
+In computer networking, **ports** are numerical identifiers used to direct data to the correct application, while **protocols** define the rules for communication. Well-known port numbers are standardized for common services. Firewalls use these numbers to allow or block network traffic.
+
+---
+
+### **File Transfer Protocol (FTP) - Ports 20 & 21**
+- **Purpose:** Transfers files between computers.
+- **Port 20:** Used for actual data transfer.
+- **Port 21:** Used for sending commands and managing sessions.
+- **Security Concern:** Not encrypted; use SFTP or FTPS for secure transfers.
+
+---
+
+### **Secure Shell (SSH) - Port 22**
+- **Purpose:** Securely access and manage remote devices.
+- **Advantage:** Encrypts communication to prevent unauthorized access.
+- **Alternative to Telnet (Port 23):** SSH is preferred as Telnet sends data in plain text.
+
+---
+
+### **Telnet - Port 23**
+- **Purpose:** Remote command-line access.
+- **Security Concern:** Sends data in plain text, making it vulnerable to eavesdropping.
+- **Alternative:** Use SSH (Port 22) instead.
+
+---
+
+### **Simple Mail Transfer Protocol (SMTP) - Port 25**
+- **Purpose:** Sends emails between mail servers.
+- **Limitation:** Does not receive emails; use POP3 (Port 110) or IMAP (Port 143) for that.
+
+---
+
+### **Domain Name System (DNS) - Port 53**
+- **Purpose:** Translates domain names (e.g., google.com) into IP addresses.
+- **Example:** When you enter `www.google.com`, DNS resolves it to `142.250.64.78`.
+
+---
+
+### **Dynamic Host Configuration Protocol (DHCP) - Ports 67 & 68**
+- **Purpose:** Automatically assigns IP addresses to devices.
+- **Port 67:** Used by DHCP servers.
+- **Port 68:** Used by clients (devices requesting an IP).
+
+---
+
+### **Hypertext Transfer Protocol (HTTP & HTTPS) - Ports 80 & 443**
+- **Port 80 (HTTP):** Loads web pages over an **insecure** connection.
+- **Port 443 (HTTPS):** Loads web pages over a **secure** connection using SSL/TLS encryption.
+
+---
+
+### **Post Office Protocol 3 (POP3) - Port 110**
+- **Purpose:** Retrieves emails from a server and downloads them to a device.
+- **Limitation:** Emails are typically deleted from the server after downloading.
+
+---
+
+### **Internet Message Access Protocol (IMAP) - Port 143**
+- **Purpose:** Retrieves emails while keeping them on the server.
+- **Advantage:** Allows access from multiple devices.
+
+---
+
+### **Server Message Block (SMB) - Port 445**
+- **Purpose:** Enables file and printer sharing on Windows networks.
+- **Use Case:** Common in office environments for shared file access.
+
+---
+
+### **Simple Network Management Protocol (SNMP) - Ports 161 & 162**
+- **Purpose:** Monitors network devices (e.g., routers, switches, servers).
+- **Port 161:** Used for sending requests.
+- **Port 162:** Used for receiving alerts (traps).
+
+---
+
+### **Lightweight Directory Access Protocol (LDAP) - Port 389**
+- **Purpose:** Stores and manages user credentials and permissions.
+- **Use Case:** Common in enterprise environments for managing logins.
+
+---
+
+### **Remote Desktop Protocol (RDP) - Port 3389**
+- **Purpose:** Remotely controls a Windows computer.
+- **Use Case:** IT support accessing office computers remotely.
+
+---
+
+These ports and protocols are fundamental in networking. Understanding them helps with troubleshooting and securing systems.
+
+
